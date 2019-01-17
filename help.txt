@@ -2,3 +2,4 @@ This is a help file
 I am learning how to use git!
 Create a new branch is quick!
 I am learning how to resolve the problem conflict branch merge!
+merge with --no--ff
