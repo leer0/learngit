@@ -34,11 +34,17 @@ git remote add origin git@github.com:leer0/learngit.git
 git push -u origin master(第一次推送时加上-u,可将本地master分支与远程master分支关联起来，以后推送或拉取时可简化命令)
 从远程库克隆
 git clone git@github.com:leer0/learngit.git
+查看所有分支
+git branch
 创建分支
-git branch -b <branchename>(参数-b表示自动切换到新分支)
+git checkout -b <branchename>(表示创建并切换到新分支)
+git branch dev(创建新分支dev)
+git checkout dev(切换到分支dev)
 删除分支
 git branch -d <branchname>
 合并分支
 git merge <branchname>(将当前分支与指定分支合并)
+禁用FastForward模式
+git merge --no--ff -m <message> <branchname>
 
 
