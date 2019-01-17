@@ -1,3 +1,4 @@
 This is a help file
 I am learning how to use git!
 Create a new branch is quick!
+This is the master branch!
