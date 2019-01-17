@@ -1,0 +1,44 @@
+创建版本库
+git init
+把文件添加到仓库
+git add readme.txt
+提交
+git commit -m "add a readme.txt file"
+显示提交日志
+git log
+git log --pretty=oneline
+git log
+版本回退
+git reset --hard HEAD^
+git reset --hard HEAD^^
+git reset --hard HEAD~100
+gti reset --hard 1094a(1094a为commitid)
+获取命令记录
+git reflog
+查看状态
+git status
+查看工作区与版本区之间的区别
+git diff HEAD --filename
+丢弃工作区的修改
+git checkout --readme.txt
+撤销暂存区的修改
+git reset HEAD <file>
+删除文件
+git rm filename
+git commit -m <message>
+恢复误删文件
+git checkout --test.txt
+添加远程库
+git remote add origin git@github.com:leer0/learngit.git
+本地库内容推送到远程库
+git push -u origin master(第一次推送时加上-u,可将本地master分支与远程master分支关联起来，以后推送或拉取时可简化命令)
+从远程库克隆
+git clone git@github.com:leer0/learngit.git
+创建分支
+git branch -b <branchename>(参数-b表示自动切换到新分支)
+删除分支
+git branch -d <branchname>
+合并分支
+git merge <branchname>(将当前分支与指定分支合并)
+
+
