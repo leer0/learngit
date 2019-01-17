@@ -7,7 +7,7 @@ git commit -m "add a readme.txt file"
 显示提交日志
 git log
 git log --pretty=oneline
-git log
+git log --graph --pretty=oneline --abbrev-commit
 版本回退
 git reset --hard HEAD^
 git reset --hard HEAD^^
@@ -46,5 +46,23 @@ git branch -d <branchname>
 git merge <branchname>(将当前分支与指定分支合并)
 禁用FastForward模式
 git merge --no--ff -m <message> <branchname>
+储存现场
+git stash
+查看所有储存
+git stash list
+恢复储存现场
+git stash apply
+git stash apply stash@{0}(恢复指定储存)
+git stash pop(恢复的同时删除储存内容)
+删除储存
+git stash drop
+查看远程仓库
+git remote
+git remote -v(显示更详细信息)
+创建远程分支到本地
+git checkout -b dev origin/dev
+拉取远程仓库的dev分支
+git branch --set-upstream-to=origin/dev dev
+git pull
 
 
